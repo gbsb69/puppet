@@ -13,6 +13,10 @@ file {'/tmp/test2.txt':
    content => 'test2'
 }
 
+file {'/tmp/test3.txt':
+   content => 'test3'
+}
+
 cron { 'run-puppet':
   command => '/usr/local/bin/run-puppet',
   hour    => '*',
