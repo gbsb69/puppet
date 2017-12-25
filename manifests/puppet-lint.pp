@@ -1,4 +1,9 @@
+package {'ruby':
+  ensure => installed,
+
+}
+
 package { 'puppet-lint':
-  ensure => present,
+  ensure => '1.1.0',
   provider => 'gem',
 }
