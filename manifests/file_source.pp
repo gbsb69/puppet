@@ -4,3 +4,8 @@ file { '/etc/motd':
   owner => 'ec2-user',
   mode => '0644',
 }
+
+file {'/etc/config_dir':
+  source => '/examples/files/config_dir',
+  recurse => true,
+}
