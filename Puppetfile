@@ -1,0 +1,1 @@
+mod 'puppetlabs-mysql', '5.1.0'
